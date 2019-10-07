@@ -32,8 +32,8 @@ def start(update: Update, context: CallbackContext):
         if args[0] == 'inline-help':
             inlinequery_help(update, context)
     elif update.message.chat.username not in (OFFTOPIC_USERNAME, ONTOPIC_USERNAME):
-        update.message.reply_text("Hi. I'm a bot that will announce the rules of the "
-                                  "python-telegram-bot groups when you type /rules.")
+        update.message.reply_text("Hi. I'm a bot that does nothing. "
+                                  "Thanks for asking.")
 
 
 def inlinequery_help(update: Update, context: CallbackContext):

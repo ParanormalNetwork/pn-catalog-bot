@@ -1,2 +1,3 @@
-# rules-bot
-The Telegram bot @roolsbot serves the python-telegram-bot group chats by announcing the rules.
+# pn-catalog-bot
+
+The bot to catalog Telegram groups and channels.

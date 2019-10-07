@@ -12,8 +12,8 @@ from telegram.ext import CallbackContext
 
 ARROW_CHARACTER = '➜'
 GITHUB_URL = "https://github.com/"
-DEFAULT_REPO_OWNER = 'python-telegram-bot'
-DEFAULT_REPO_NAME = 'python-telegram-bot'
+DEFAULT_REPO_OWNER = 'ParanormalNetwork'
+DEFAULT_REPO_NAME = 'pn-catalog-bot'
 DEFAULT_REPO = f'{DEFAULT_REPO_OWNER}/{DEFAULT_REPO_NAME}'
 
 # Require x non-command messages between each /rules etc.
@@ -105,7 +105,7 @@ Commit = namedtuple('Commit', 'owner, repo, sha, url, title, author')
 class GitHubIssues:
     def __init__(self, default_owner=DEFAULT_REPO_OWNER, default_repo=DEFAULT_REPO_NAME):
         self.s = Session()
-        self.s.headers.update({'user-agent': 'bvanrijn/rules-bot'})
+        self.s.headers.update({'user-agent': 'bvanrijn/pn-catalog-bot'})
         self.base_url = 'https://api.github.com/'
         self.default_owner = default_owner
         self.default_repo = default_repo
